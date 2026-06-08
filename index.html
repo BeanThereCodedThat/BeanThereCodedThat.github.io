@@ -35,7 +35,6 @@
     overflow-x: hidden;
   }
 
-  /* Noise texture overlay */
   body::before {
     content: '';
     position: fixed;
@@ -48,7 +47,6 @@
 
   mono { font-family: 'JetBrains Mono', monospace; }
 
-  /* NAV */
   nav {
     position: fixed;
     top: 0; left: 0; right: 0;
@@ -71,11 +69,7 @@
 
   .nav-logo span { color: var(--muted); }
 
-  nav ul {
-    list-style: none;
-    display: flex;
-    gap: 2rem;
-  }
+  nav ul { list-style: none; display: flex; gap: 2rem; }
 
   nav a {
     font-family: 'JetBrains Mono', monospace;
@@ -87,7 +81,6 @@
   }
   nav a:hover { color: var(--accent); }
 
-  /* HERO */
   .hero {
     min-height: 100vh;
     display: flex;
@@ -147,11 +140,7 @@
     line-height: 1.8;
   }
 
-  .hero-cta {
-    display: flex;
-    gap: 1rem;
-    flex-wrap: wrap;
-  }
+  .hero-cta { display: flex; gap: 1rem; flex-wrap: wrap; }
 
   .btn {
     font-family: 'JetBrains Mono', monospace;
@@ -168,21 +157,12 @@
     gap: 0.5rem;
   }
 
-  .btn-primary {
-    background: var(--accent);
-    color: #0a0c10;
-    font-weight: 700;
-  }
+  .btn-primary { background: var(--accent); color: #0a0c10; font-weight: 700; }
   .btn-primary:hover { background: #1ab892; transform: translateY(-1px); }
 
-  .btn-outline {
-    background: transparent;
-    color: var(--text);
-    border: 1px solid var(--border2);
-  }
+  .btn-outline { background: transparent; color: var(--text); border: 1px solid var(--border2); }
   .btn-outline:hover { border-color: var(--accent); color: var(--accent); transform: translateY(-1px); }
 
-  /* Terminal window effect in hero */
   .terminal {
     position: absolute;
     right: 0;
@@ -214,23 +194,15 @@
   .dot-yellow { background: #ffbd2e; }
   .dot-green { background: #28c840; }
 
-  .terminal-title {
-    font-size: 0.7rem;
-    color: var(--muted);
-    margin-left: auto;
-    margin-right: auto;
-  }
+  .terminal-title { font-size: 0.7rem; color: var(--muted); margin-left: auto; margin-right: auto; }
 
-  .terminal-body {
-    padding: 1.2rem 1.5rem;
-    line-height: 1.9;
-  }
+  .terminal-body { padding: 1.2rem 1.5rem; line-height: 1.9; }
 
   .t-prompt { color: var(--accent); }
   .t-cmd { color: var(--text); }
   .t-out { color: var(--muted2); }
   .t-key { color: #a78bfa; }
-  .t-val { color: #fbbf24; }
+  .t-val { color: var(--yellow); }
   .t-str { color: #34d399; }
   .t-num { color: #fb923c; }
   .t-cursor {
@@ -242,12 +214,7 @@
   }
   @keyframes blink { 0%, 100% { opacity: 1; } 50% { opacity: 0; } }
 
-  /* SECTIONS */
-  section {
-    max-width: 1100px;
-    margin: 0 auto;
-    padding: 5rem 2rem;
-  }
+  section { max-width: 1100px; margin: 0 auto; padding: 5rem 2rem; }
 
   .section-label {
     font-family: 'JetBrains Mono', monospace;
@@ -266,13 +233,8 @@
     margin-bottom: 3rem;
   }
 
-  .section-divider {
-    border: none;
-    border-top: 1px solid var(--border);
-    margin: 0;
-  }
+  .section-divider { border: none; border-top: 1px solid var(--border); margin: 0; }
 
-  /* SKILLS */
   .skills-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
@@ -283,47 +245,17 @@
     overflow: hidden;
   }
 
-  .skill-card {
-    background: var(--surface);
-    padding: 1.5rem;
-    transition: background 0.2s;
-  }
+  .skill-card { background: var(--surface); padding: 1.5rem; transition: background 0.2s; }
   .skill-card:hover { background: var(--surface2); }
 
-  .skill-card-header {
-    display: flex;
-    align-items: center;
-    gap: 0.75rem;
-    margin-bottom: 1rem;
-  }
+  .skill-card-header { display: flex; align-items: center; gap: 0.75rem; margin-bottom: 1rem; }
 
-  .skill-icon {
-    width: 36px; height: 36px;
-    border-radius: 6px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 1rem;
-  }
+  .skill-icon { width: 36px; height: 36px; border-radius: 6px; display: flex; align-items: center; justify-content: center; font-size: 1rem; }
 
-  .skill-card-title {
-    font-size: 0.85rem;
-    font-weight: 700;
-    letter-spacing: 0.03em;
-    color: var(--text);
-  }
+  .skill-card-title { font-size: 0.85rem; font-weight: 700; letter-spacing: 0.03em; color: var(--text); }
+  .skill-card-sub { font-family: 'JetBrains Mono', monospace; font-size: 0.65rem; color: var(--muted); }
 
-  .skill-card-sub {
-    font-family: 'JetBrains Mono', monospace;
-    font-size: 0.65rem;
-    color: var(--muted);
-  }
-
-  .skill-tags {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.4rem;
-  }
+  .skill-tags { display: flex; flex-wrap: wrap; gap: 0.4rem; }
 
   .tag {
     font-family: 'JetBrains Mono', monospace;
@@ -339,7 +271,6 @@
   .tag.learning { border-color: rgba(251,191,36,0.3); color: var(--yellow); background: rgba(251,191,36,0.06); }
   .tag.planned { border-color: rgba(99,102,241,0.3); color: #818cf8; background: rgba(99,102,241,0.06); }
 
-  /* EXPERIENCE */
   .exp-timeline { position: relative; }
 
   .exp-item {
@@ -353,41 +284,13 @@
 
   .exp-item:last-child { border-bottom: 1px solid var(--border); }
 
-  .exp-date {
-    font-family: 'JetBrains Mono', monospace;
-    font-size: 0.72rem;
-    color: var(--muted);
-    padding-top: 0.2rem;
-    letter-spacing: 0.04em;
-  }
+  .exp-date { font-family: 'JetBrains Mono', monospace; font-size: 0.72rem; color: var(--muted); padding-top: 0.2rem; letter-spacing: 0.04em; }
 
-  .exp-role {
-    font-size: 1.1rem;
-    font-weight: 700;
-    color: var(--text);
-    margin-bottom: 0.25rem;
-  }
+  .exp-role { font-size: 1.1rem; font-weight: 700; color: var(--text); margin-bottom: 0.25rem; }
+  .exp-company { font-family: 'JetBrains Mono', monospace; font-size: 0.75rem; color: var(--accent); margin-bottom: 0.75rem; }
+  .exp-desc { font-size: 0.9rem; color: var(--muted2); margin-bottom: 1rem; line-height: 1.7; }
 
-  .exp-company {
-    font-family: 'JetBrains Mono', monospace;
-    font-size: 0.75rem;
-    color: var(--accent);
-    margin-bottom: 0.75rem;
-  }
-
-  .exp-desc {
-    font-size: 0.9rem;
-    color: var(--muted2);
-    margin-bottom: 1rem;
-    line-height: 1.7;
-  }
-
-  /* PROJECTS */
-  .projects-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-    gap: 1.5rem;
-  }
+  .projects-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 1.5rem; }
 
   .project-card {
     background: var(--surface);
@@ -412,23 +315,9 @@
   .project-card:hover { border-color: var(--border2); transform: translateY(-2px); }
   .project-card:hover::before { opacity: 1; }
 
-  .project-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    margin-bottom: 0.75rem;
-  }
-
-  .project-name {
-    font-size: 1.05rem;
-    font-weight: 700;
-    color: var(--text);
-  }
-
-  .project-links {
-    display: flex;
-    gap: 0.5rem;
-  }
+  .project-header { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 0.75rem; }
+  .project-name { font-size: 1.05rem; font-weight: 700; color: var(--text); }
+  .project-links { display: flex; gap: 0.5rem; }
 
   .project-link {
     font-family: 'JetBrains Mono', monospace;
@@ -442,33 +331,13 @@
   }
   .project-link:hover { border-color: var(--accent); color: var(--accent); }
 
-  .project-desc {
-    font-size: 0.88rem;
-    color: var(--muted2);
-    margin-bottom: 1.25rem;
-    line-height: 1.7;
-  }
+  .project-desc { font-size: 0.88rem; color: var(--muted2); margin-bottom: 1.25rem; line-height: 1.7; }
+  .project-featured { border-color: rgba(34,211,165,0.2); background: rgba(34,211,165,0.02); }
 
-  .project-featured {
-    border-color: rgba(34,211,165,0.2);
-    background: rgba(34,211,165,0.02);
-  }
-
-  /* ABOUT */
-  .about-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 4rem;
-    align-items: start;
-  }
-
+  .about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: start; }
   @media (max-width: 700px) { .about-grid { grid-template-columns: 1fr; gap: 2rem; } }
 
-  .about-text p {
-    color: var(--muted2);
-    margin-bottom: 1rem;
-    line-height: 1.8;
-  }
+  .about-text p { color: var(--muted2); margin-bottom: 1rem; line-height: 1.8; }
 
   .about-stats {
     display: grid;
@@ -480,10 +349,7 @@
     overflow: hidden;
   }
 
-  .stat-box {
-    background: var(--surface);
-    padding: 1.5rem;
-  }
+  .stat-box { background: var(--surface); padding: 1.5rem; }
 
   .stat-num {
     font-family: 'JetBrains Mono', monospace;
@@ -495,12 +361,8 @@
     margin-bottom: 0.4rem;
   }
 
-  .stat-label {
-    font-size: 0.78rem;
-    color: var(--muted);
-  }
+  .stat-label { font-size: 0.78rem; color: var(--muted); }
 
-  /* CONTACT */
   .contact-inner {
     background: var(--surface);
     border: 1px solid var(--border);
@@ -514,23 +376,9 @@
 
   @media (max-width: 700px) { .contact-inner { grid-template-columns: 1fr; padding: 2rem; } }
 
-  .contact-title {
-    font-size: 1.8rem;
-    font-weight: 800;
-    margin-bottom: 0.75rem;
-  }
-
-  .contact-sub {
-    font-size: 0.9rem;
-    color: var(--muted2);
-    margin-bottom: 1.5rem;
-  }
-
-  .contact-links {
-    display: flex;
-    flex-direction: column;
-    gap: 0.75rem;
-  }
+  .contact-title { font-size: 1.8rem; font-weight: 800; margin-bottom: 0.75rem; }
+  .contact-sub { font-size: 0.9rem; color: var(--muted2); margin-bottom: 1.5rem; }
+  .contact-links { display: flex; flex-direction: column; gap: 0.75rem; }
 
   .contact-link {
     display: flex;
@@ -542,7 +390,6 @@
     transition: color 0.2s;
     font-family: 'JetBrains Mono', monospace;
   }
-
   .contact-link:hover { color: var(--accent); }
 
   .contact-link-icon {
@@ -556,7 +403,6 @@
     flex-shrink: 0;
   }
 
-  /* FOOTER */
   footer {
     border-top: 1px solid var(--border);
     padding: 2rem;
@@ -566,17 +412,8 @@
     color: var(--muted);
   }
 
-  /* Animations */
-  .fade-in {
-    opacity: 0;
-    transform: translateY(16px);
-    animation: fadeIn 0.7s ease forwards;
-  }
-
-  @keyframes fadeIn {
-    to { opacity: 1; transform: translateY(0); }
-  }
-
+  .fade-in { opacity: 0; transform: translateY(16px); animation: fadeIn 0.7s ease forwards; }
+  @keyframes fadeIn { to { opacity: 1; transform: translateY(0); } }
   .delay-1 { animation-delay: 0.1s; }
   .delay-2 { animation-delay: 0.2s; }
   .delay-3 { animation-delay: 0.3s; }
@@ -604,18 +441,17 @@
   </ul>
 </nav>
 
-<!-- HERO -->
 <div style="max-width:1100px;margin:0 auto;padding:0 2rem;position:relative;">
   <div class="hero">
     <div class="hero-content">
-      <div class="hero-tag fade-in">SDE Intern · Radico Khaitan Ltd.</div>
+      <div class="hero-tag fade-in">B.Tech CSE · KIIT Bhubaneswar · 3rd Year</div>
       <h1 class="fade-in delay-1">
         Vartaman<br>
         <span class="accent">Tripathi</span><br>
         <span class="dim" style="font-size:0.5em;font-family:'JetBrains Mono',monospace;font-weight:300;letter-spacing:0.02em;">Backend Engineer</span>
       </h1>
       <p class="hero-desc fade-in delay-2">
-        3rd year CSE student at KIIT, currently interning as SDE at Radico Khaitan Ltd. · Building production backend systems with Java &amp; Spring Boot · Engineering a Redis clone from scratch in pure Java.
+        Backend-first engineer building production systems with Java &amp; Spring Boot. Currently engineering a Redis clone from scratch in pure Java and exploring distributed systems internals.
       </p>
       <div class="hero-cta fade-in delay-3">
         <a href="https://drive.google.com/file/d/1j2opXUuQNokObS0MhHDWHgWdQQC1gxJ0/view?usp=sharing" target="_blank" class="btn btn-primary">
@@ -640,15 +476,14 @@
         <div><span class="t-prompt">❯ </span><span class="t-cmd">cat profile.json</span></div>
         <div class="t-out">{</div>
         <div class="t-out">&nbsp; <span class="t-key">"name"</span>: <span class="t-str">"Vartaman Tripathi"</span>,</div>
-        <div class="t-out">&nbsp; <span class="t-key">"role"</span>: <span class="t-str">"SDE Intern"</span>,</div>
-        <div class="t-out">&nbsp; <span class="t-key">"employer"</span>: <span class="t-str">"Radico Khaitan Ltd."</span>,</div>
         <div class="t-out">&nbsp; <span class="t-key">"university"</span>: <span class="t-str">"KIIT"</span>,</div>
         <div class="t-out">&nbsp; <span class="t-key">"cgpa"</span>: <span class="t-num">8.83</span>,</div>
+        <div class="t-out">&nbsp; <span class="t-key">"focus"</span>: <span class="t-str">"Backend Engineering"</span>,</div>
         <div class="t-out">&nbsp; <span class="t-key">"stack"</span>: [</div>
         <div class="t-out">&nbsp;&nbsp;&nbsp; <span class="t-str">"Java"</span>, <span class="t-str">"Spring Boot"</span>,</div>
         <div class="t-out">&nbsp;&nbsp;&nbsp; <span class="t-str">"MySQL"</span>, <span class="t-str">"Redis"</span></div>
         <div class="t-out">&nbsp; ],</div>
-        <div class="t-out">&nbsp; <span class="t-key">"year"</span>: <span class="t-str">"3rd · Sem 5"</span></div>
+        <div class="t-out">&nbsp; <span class="t-key">"building"</span>: <span class="t-str">"Redis clone in Java"</span></div>
         <div class="t-out">}</div>
         <div style="margin-top:0.5rem;"><span class="t-prompt">❯ </span><span class="t-cursor"></span></div>
       </div>
@@ -665,10 +500,10 @@
   <div class="about-grid">
     <div class="about-text">
       <p>
-        I'm a third-year Computer Science student at KIIT, Bhubaneswar, currently interning as an SDE at Radico Khaitan Ltd. My primary stack is Java and Spring Boot, and I care about writing clean, scalable, and maintainable server-side code.
+        I'm a third-year Computer Science student at KIIT, Bhubaneswar. My primary stack is Java and Spring Boot, and I care about writing clean, scalable, and maintainable server-side code.
       </p>
       <p>
-        At Radico, I've shipped a full-stack Dispensary Management System and a contractor worker attendance tracker — both running in production. I'm also building a Redis clone from scratch in pure Java to deepen my understanding of distributed systems internals.
+        I've shipped full-stack production systems — a 10-module OHC management platform with RBAC and a JWT auth backend from scratch — and I'm currently building a Redis clone in pure Java to deepen my understanding of distributed systems internals.
       </p>
       <p>
         Outside tech, I write — freelancing and exploring ideas through words.
@@ -684,12 +519,12 @@
         <span class="stat-label">Year B.Tech CSE</span>
       </div>
       <div class="stat-box">
-        <span class="stat-num">SDE</span>
-        <span class="stat-label">@ Radico Khaitan</span>
+        <span class="stat-num">2+</span>
+        <span class="stat-label">Internships</span>
       </div>
       <div class="stat-box">
-        <span class="stat-num">2</span>
-        <span class="stat-label">Internships</span>
+        <span class="stat-num">∞</span>
+        <span class="stat-label">Things to build</span>
       </div>
     </div>
   </div>
@@ -729,6 +564,7 @@
         <span class="tag known">Spring Boot</span>
         <span class="tag known">Spring Security</span>
         <span class="tag known">REST APIs</span>
+        <span class="tag known">Flask</span>
       </div>
     </div>
 
@@ -762,8 +598,6 @@
       </div>
     </div>
 
-
-
     <div class="skill-card">
       <div class="skill-card-header">
         <div class="skill-icon" style="background:rgba(99,102,241,0.1);">🛠️</div>
@@ -795,12 +629,12 @@
   <h2>Where I've worked</h2>
   <div class="exp-timeline">
     <div class="exp-item">
-      <div class="exp-date">2025 — Present</div>
+      <div class="exp-date">Jun 2026 — Sep 2026</div>
       <div>
         <div class="exp-role">SDE Intern</div>
         <div class="exp-company">Radico Khaitan Ltd.</div>
         <p class="exp-desc">
-          Building internal tools for one of India's largest IMFL companies. Shipped a full-stack Dispensary Management System for the plant's Occupational Health Centre — covering OPD visits, prescriptions, inventory, vaccinations, and RBAC across four roles. Also built a contractor worker attendance tracker handling bulk punch-in/out across configurable shifts.
+          Built two internal production tools: a full-stack Dispensary Management System for the plant's OHC — 10 modules, RBAC across 4 roles, OPD-to-prescription-to-inventory workflow — and a contractor worker attendance tracker with configurable shifts and bulk punch-in/out. Both in production serving ~500 employees.
         </p>
       </div>
     </div>
@@ -811,12 +645,10 @@
         <div class="exp-role">Backend Intern</div>
         <div class="exp-company">Rings &amp; Bows</div>
         <p class="exp-desc">
-          Designed and shipped the authentication backend for a gifting e-commerce platform serving real users. Built JWT-based auth with role-based access control from scratch — zero third-party auth libraries. Reduced login flow to a single stateless round-trip, cutting session overhead entirely. Structured the MySQL schema to support future multi-vendor expansion without breaking changes.
+          Designed and shipped the authentication backend for a gifting e-commerce platform. Built JWT-based auth with RBAC from scratch — zero third-party auth libraries. Reduced login flow to a single stateless round-trip, cutting session overhead entirely.
         </p>
       </div>
     </div>
-
-
   </div>
 </section>
 
@@ -830,13 +662,13 @@
 
     <div class="project-card project-featured">
       <div class="project-header">
-        <div class="project-name">Redis Clone (Java)</div>
+        <div class="project-name">Mini-Redis</div>
         <div class="project-links">
-          <a href="https://github.com/BeanThereCodedThat" target="_blank" class="project-link">github ↗</a>
+          <a href="https://github.com/BeanThereCodedThat/Mini-Redis" target="_blank" class="project-link">github ↗</a>
         </div>
       </div>
       <p class="project-desc">
-        A from-scratch Redis implementation in pure Java. Built a multi-threaded TCP server, RESP protocol parser, and core command support (SET, GET, DEL, EXPIRE, TTL). No external libraries — raw sockets and Java concurrency primitives.
+        Redis clone in pure Java from scratch. Multi-threaded TCP server, RESP protocol parser, core commands (SET, GET, DEL, EXPIRE, TTL). No external libraries — raw sockets and Java concurrency primitives.
       </p>
       <div class="skill-tags">
         <span class="tag known">Java</span>
@@ -851,17 +683,18 @@
       <div class="project-header">
         <div class="project-name">StayLens</div>
         <div class="project-links">
-          <a href="https://github.com/BeanThereCodedThat" target="_blank" class="project-link">github ↗</a>
+          <a href="https://github.com/BeanThereCodedThat/staylens" target="_blank" class="project-link">github ↗</a>
         </div>
       </div>
       <p class="project-desc">
-        Accommodation discovery service with a normalised MySQL schema separating properties, rooms, and availability into distinct tables — keeps queries fast as listing volume grows. Exposes paginated search and filter endpoints over REST.
+        Hotel price intelligence engine. Weighted ranking system, coupon optimisation, Spring Cache for performance. Java 21 + Spring Boot + Playwright + MySQL + Docker.
       </p>
       <div class="skill-tags">
-        <span class="tag known">Java</span>
+        <span class="tag known">Java 21</span>
         <span class="tag known">Spring Boot</span>
         <span class="tag known">MySQL</span>
-        <span class="tag known">REST API</span>
+        <span class="tag known">Docker</span>
+        <span class="tag known">Playwright</span>
       </div>
     </div>
 
@@ -869,41 +702,41 @@
       <div class="project-header">
         <div class="project-name">InternHunt</div>
         <div class="project-links">
-          <a href="https://github.com/BeanThereCodedThat" target="_blank" class="project-link">github ↗</a>
+          <a href="https://github.com/BeanThereCodedThat/internhunt" target="_blank" class="project-link">github ↗</a>
         </div>
       </div>
       <p class="project-desc">
-        Internship aggregator with multi-field filtering (domain, location, stipend range). Built a normalised schema that avoids N+1 queries on listing pages — fetches all filter dimensions in a single JOIN. REST API designed around query composition rather than fixed endpoints.
+        Internship aggregator scraping 20+ platforms. Scam detection, 72hr notification engine, application pipeline dashboard. Spring Boot + React + Docker + Playwright + JSoup.
       </p>
       <div class="skill-tags">
         <span class="tag known">Java</span>
         <span class="tag known">Spring Boot</span>
-        <span class="tag known">MySQL</span>
-        <span class="tag known">REST API</span>
+        <span class="tag known">React</span>
+        <span class="tag known">Docker</span>
+        <span class="tag known">Playwright</span>
       </div>
     </div>
 
     <div class="project-card">
       <div class="project-header">
-        <div class="project-name">Dispensary Management System</div>
+        <div class="project-name">HMS — OHC Management System</div>
         <div class="project-links">
-          <span class="project-link" style="cursor:default;opacity:0.5;">internal</span>
+          <a href="https://github.com/BeanThereCodedThat/hms" target="_blank" class="project-link">github ↗</a>
         </div>
       </div>
       <p class="project-desc">
-        Full-stack OHC management system handling the end-to-end walk-in patient workflow: OPD visits, doctor consultations, prescription generation, and medicine issuance with automatic inventory deduction. Built 10 modules including RBAC (Admin, Doctor, Pharmacist, OPD Staff), expiry-aware inventory tracking with colour-coded stock alerts, vaccination scheduling, and a real-time dashboard. React + TypeScript frontend, Spring Boot 3 + Spring Security backend, JWT auth.
+        Full-stack OHC management system. End-to-end OPD workflow — visit registration, consultation, prescription, medicine dispensing with automatic inventory deduction. 10 modules, RBAC across 4 roles, expiry-aware inventory, vaccination scheduling, real-time dashboard.
       </p>
       <div class="skill-tags">
         <span class="tag known">Java 21</span>
         <span class="tag known">Spring Boot 3</span>
         <span class="tag known">Spring Security</span>
-        <span class="tag known">Spring Data JPA</span>
         <span class="tag known">React</span>
         <span class="tag known">TypeScript</span>
         <span class="tag known">MySQL</span>
         <span class="tag known">JWT</span>
+        <span class="tag known">Docker</span>
       </div>
-      <div style="margin-top:1rem;font-family:'JetBrains Mono',monospace;font-size:0.68rem;color:var(--muted2);">@ Radico Khaitan Ltd.</div>
     </div>
 
     <div class="project-card">
@@ -914,15 +747,13 @@
         </div>
       </div>
       <p class="project-desc">
-        Single-file attendance tracker for contractor-managed workers. Auto-generates worker codes (W001, W002…), supports configurable shifts with punch-in/out time windows, and records attendance in bulk by selecting workers via checkbox. Entirely self-contained — Flask backend, MySQL persistence, and an embedded HTML/JS frontend served from the same <code style="font-family:'JetBrains Mono',monospace;font-size:0.8em;color:var(--accent);">app.py</code>. Zero deployment overhead.
+        Single-file attendance tracker for contractor workers. Auto-generates worker codes, configurable shifts, bulk punch-in/out. Flask + MySQL with embedded HTML/JS frontend — zero deployment overhead.
       </p>
       <div class="skill-tags">
         <span class="tag known">Python</span>
         <span class="tag known">Flask</span>
         <span class="tag known">MySQL</span>
-        <span class="tag known">REST API</span>
       </div>
-      <div style="margin-top:1rem;font-family:'JetBrains Mono',monospace;font-size:0.68rem;color:var(--muted2);">@ Radico Khaitan Ltd.</div>
     </div>
 
   </div>
@@ -948,13 +779,12 @@
         </div>
         BeanThereCodedThat
       </a>
-      <a href="https://linkedin.com/in/vartaman-tripathi" target="_blank" class="contact-link">
+      <a href="https://linkedin.com/in/vartaman-tripathi-895393356" target="_blank" class="contact-link">
         <div class="contact-link-icon">
           <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
         </div>
         linkedin/vartaman-tripathi
       </a>
-
       <div class="contact-link" style="cursor:default;">
         <div class="contact-link-icon" style="font-family:'JetBrains Mono',monospace;font-size:0.6rem;font-weight:700;color:var(--accent);">IN</div>
         KIIT · Bhubaneswar, India
